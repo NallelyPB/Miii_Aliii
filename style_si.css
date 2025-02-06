@@ -94,11 +94,11 @@ p {
 /* 💫💖 Efecto Chispitas 💖💫 */
 .sparkles {
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 5%;
-    width: 80px;
-    height: 80px;
-    background: url('https://png.pngtree.com/png-clipart/20210211/ourmid/pngtree-sparks-background-png-image_2910652.jpg') no-repeat center;
+    width: 500px;
+    height: 500px;
+    background: url('ima1.jpg') no-repeat center;
     background-size: contain;
     animation: sparkle 1.5s infinite alternate ease-in-out;
     opacity: 0.6;
