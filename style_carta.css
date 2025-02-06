@@ -1,0 +1,188 @@
+/* Reset CSS */
+* {
+  min-width: 0;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Estilos generales */
+body {
+  background-color: #fad7df;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-letter {
+  position: relative;
+}
+
+/* Sobre */
+.cover {
+  position: absolute;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 100px solid #fe3334;
+  border-bottom: 100px solid transparent;
+  transition: transform .75s;
+  transform-origin: top;
+}
+
+/* Papel de la carta */
+
+/* Carta más grande */
+.paper {
+  position: absolute;
+  padding: 1.5rem;
+  line-height: 1.5rem;
+  right: 5px;
+  bottom: 10px; /* Ajustado para que no sobresalga */
+  z-index: -1;
+  background: white;
+  width: 380px;
+  height: 170px; /* Reducido el alto para que no sobrepase */
+  text-align: center;
+  overflow: hidden;
+  word-wrap: break-word;
+  transition: all 0.75s;
+}
+
+
+/* Carta */
+.letter {
+  border-left: 200px solid #ff989e;
+  border-right: 200px solid #ff989e;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid #ff858a;
+}
+
+/* Botones */
+.options {
+  display: flex;
+  gap: 5rem;
+}
+
+.options button {
+  color: #ff3234;
+  font-weight: 600;
+  border-radius: 3px;
+  background: #fad7df;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fe3334;
+  cursor: pointer;
+}
+
+.options button:hover {
+  background: #ff989e;
+  color: white;
+}
+
+/* Animaciones */
+.open-cover {
+  transform: rotatex(180deg);
+}
+
+.open-paper {
+  animation: openPaper .5s forwards;
+}
+
+@keyframes openPaper {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -150px;
+  }
+}
+
+@keyframes closePaper {
+  0% {
+    top: -120px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/* Corazón grande */
+.heart {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 46.5%;
+  font-size: 3rem;
+  color: #fe3334;
+  animation: crecer 1s forwards;
+}
+
+@keyframes crecer {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+  100% {
+    scale: 3;
+    opacity: 0;
+  }
+}
+
+/* Corazones flotantes */
+.floating-heart {
+  position: fixed; /* Hace que se muevan por toda la pantalla */
+  font-size: 8rem;
+  color: red;
+  animation: floatHeart 5s infinite ease-in-out; /* Usar floatHeart */
+  opacity: 0.8;
+}
+
+/* Animación de corazones flotando */
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-50px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+

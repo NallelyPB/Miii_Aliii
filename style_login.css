@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Neue", serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f8f6f1;
+    text-align: center;
+}
+
+#encabezado-container {
+    margin-bottom: 20px;
+}
+
+#brillo {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(255, 0, 102, 0.7);
+    text-shadow: 0 0px 10px rgba(233, 85, 189, 0.5);
+}
+
+.galeria {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.galeria img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 0 4px #0007;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #ff007f;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff007f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e60073;
+}
+
+#mensaje {
+    font-size: 14px;
+    font-weight: bold;
+}

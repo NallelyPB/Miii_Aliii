@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpresa Fotos San Valentín</title>
+    <link rel="stylesheet" href="style_login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="encabezado-container">
+        <div id="brillo">¡Feliz Día de San Valentín! 💞</div>
+    </div>
+
+    <div class="galeria">
+        <img src="ima1.jpg">
+        <img src="ima2.jpg">
+        <img src="ima3.jpg">
+        <img src="ima4.jpg">
+        <img src="ima1.jpg">
+    </div>
+
+    <div class="login-container">
+        <p>Ingresa la contraseña para ver tu sorpresa 💖</p>
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="verificarPassword()">Ingresar</button>
+        <p id="mensaje"></p>
+    </div>
+
+    <script>
+        function verificarPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "121217") {
+                window.location.href = "login.html";
+            } else {
+                document.getElementById("mensaje").innerText = "Inténtalo de nuevo amor. Tu puedes!";
+                document.getElementById("mensaje").style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>
