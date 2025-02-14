@@ -98,7 +98,7 @@ p {
     left: 5%;
     width: 500px;
     height: 500px;
-    background: url('ima6.png') no-repeat center;
+    background: url('ima8.png') no-repeat center;
     background-size: contain;
     animation: sparkle 1.5s infinite alternate ease-in-out;
     opacity: 0.6;
